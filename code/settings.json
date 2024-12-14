@@ -1,0 +1,135 @@
+{
+  "workbench.colorTheme": "Dracula Theme",
+  "files.autoSave": "afterDelay",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.tabSize": 2,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "editor.fontFamily": "'Source Han Code JP'",
+
+  "security.workspace.trust.enabled": false,
+
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.s3db": "tailwindcss"
+  },
+
+  "latex-workshop.intellisense.package.enabled": true,
+
+  "[latex]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "James-Yu.latex-workshop",
+    "editor.unicodeHighlight.allowedCharacters": {
+      "，": true,
+      "．": true,
+      "！": true,
+      "？": true,
+      "［": true,
+      "］": true,
+      "｛": true,
+      "｝": true,
+      "＜": true,
+      "＞": true
+    }
+  },
+
+  "latex-workshop.formatting.latex": "latexindent",
+  "latex-workshop.formatting.latexindent.path": "latexindent",
+  "latex-workshop.formatting.latexindent.args": [
+    "-c",
+    "%DIR%/",
+    "%TMPFILE%",
+    "-l",
+    "/home/mimi/.config/latexindent/latexindentrc.yaml",
+    "-r"
+  ],
+
+  // ビルドのレシピ
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk-uplatex",
+      "tools": ["latexmk-uplatex"]
+    }
+  ],
+  // 生成ファイルを現在のディレクトリに吐き出す
+  "latex-workshop.latex.outDir": "",
+  // ビルドのレシピに使われるパーツ
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk-uplatex",
+      "command": "latexmk",
+      "args": [
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdfdvi",
+        "-outdir=%OUTDIR%",
+        "%DOCFILE%"
+      ],
+      "env": {}
+    }
+  ],
+  "latex-workshop.view.pdf.viewer": "tab",
+  "workbench.editor.enablePreview": false,
+
+  "workbench.editorAssociations": {
+    "*.pdf": "latex-workshop-pdf-hook"
+  },
+
+  "[mips]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "AngaBlue.asm-formatter"
+  },
+  "workbench.activityBar.location": "top",
+  "workbench.editor.editorActionsLocation": "titleBar",
+  "window.customTitleBarVisibility": "auto",
+  "window.menuBarVisibility": "toggle",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+
+  "[MIPS]": {},
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontWeight": "400",
+  "workbench.startupEditor": "none",
+  "editor.fontWeight": "normal",
+  "cSpell.userWords": ["commitlint", "mimifuwa", "Suica"],
+  "markdown.marp.exportType": "pptx",
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  },
+
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
+  },
+  "workbench.iconTheme": "city-lights-icons-vsc",
+  "terminal.integrated.fontFamily": "Hack Nerd Font",
+  "[c]": {
+    "editor.formatOnSaveMode": "file",
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "prettier.resolveGlobalModules": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "terminal.external.linuxExec": "/usr/bin/kitty",
+  "terminal.explorerKind": "both",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "javascript.updateImportsOnFileMove.enabled": "never"
+}
